@@ -14,7 +14,7 @@ describe Api::FoxesController, type: :request do
 
       get api_fox_path(fox)
 
-      expect(JSON.parse(response.body)).to eq({
+      expect(JSON.parse(response.body)).to eq("fox" => {
           'name' => fox.name,
           'variety' => fox.variety,
           'coloration' => fox.coloration,
