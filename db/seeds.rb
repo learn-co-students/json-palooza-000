@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#10.times do 
+#  bird_names = ["Eric", "Carlo","Lou Bega", "Don Giovani", "Constantine", "Mrs. Paddyshack", "Edgar Willis"]
+#  bird_species = ["Pilliated Woodpecker", "Kingfisher", "Great Blue Heron", "Eurasian Eagle Owl"]
+#  Bird.create(name: bird_names.sample, species: bird_species.sample)
+#end
+
+#10.times do 
+#  bird_ids = Bird.all.map{|bird| bird.id}
+#  BirdSighting.create(bird_id: bird_ids.sample, sighted_at: Time.now)
+#end
+
+#10.times do 
+  names = ["Sanjay", "Erico", "Que", "Raymond", "Derek", "Corbin"]
+  varieties = ["Arctic", "African", "American", "European"]
+#  colorations = ["Spangled", "Brindle", "Dunn", "Translucent"]
+#  sayings = ["Oh no!", "Oh yes!", "Oh for the love!", "Oh boy!", "Oh gosh!", "Oh man!"]
+#  Fox.create(name: names.sample, variety: varieties.sample, coloration: colorations.sample, saying: sayings.sample)
+#end
+
+10.times do
+  Wolf.create(name: names.sample, species: varieties.sample)
+end

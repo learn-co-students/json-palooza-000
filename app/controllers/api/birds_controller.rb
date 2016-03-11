@@ -1,5 +1,6 @@
 class Api::BirdsController < ApiController
   def index
+    #binding.pry
     @page = params[:page].to_i
     @page = 1 unless @page > 0
 
